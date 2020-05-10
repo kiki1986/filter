@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			img{
+				width: 400px;
+				height: 500px;
+				display: block;
+				margin: auto;
+				/* 悬浮3s */
+				transition: all 1s;
+			}
+			img:hover{
+				-webkit-filter:none;
+				/* 鼠标略过，无滤镜 */
+			}
+			.img1{
+				/* grayscale() :灰度，1是最灰*/
+				-webkit-filter:grayscale(1) ;
+			}
+			.img2{
+				/* brightness() :亮度，1是正常*/
+				-webkit-filter:brightness(3) ;
+			}.img3{
+				/* sepia() :褐色，1是最黄*/
+				-webkit-filter:sepia(1) ;
+			}
+			.img4{
+				/* blur() :模糊度，5代表五个像素合并一个*/
+				-webkit-filter:blur(5px);
+			}
+			.img5{
+				/*contrast() :对比度，1是正常，0是灰色*/
+				-webkit-filter:contrast(3) ;
+			}
+			.img6{
+				/* saturate() :饱和度，1是正常，0为灰色*/
+				-webkit-filter:saturate(5) ;
+			}
+			.img7{
+				/* hue-rotate() :色相旋转*/
+				-webkit-filter: hue-rotate(90deg);
+			}
+			.img8{
+				-webkit-filter: brightness(8) grayscale(1);
+				transition: all 10s;
+			}
+			.img8:hover{
+				-webkit-filter: brightness(1) grayscale(1);
+				
+			}
+		</style>
+	</head>
+	<body>
+		<img class="img1" src="img/faceu_0_20190320192018.jpg" >
+		<img class="img2" src="img/faceu_0_20190320192018.jpg" >
+		<img class="img3" src="img/faceu_0_20190320192018.jpg" >
+		<img class="img4" src="img/faceu_0_20190320192018.jpg" >
+		<img class="img5" src="img/faceu_0_20190320192018.jpg" >
+		<img class="img6" src="img/faceu_0_20190320192018.jpg" >
+		<img class="img7" src="img/faceu_0_20190320192018.jpg" >
+		<img class="img8" src="img/faceu_0_20190320192018.jpg" >
+	</body>
+</html>
